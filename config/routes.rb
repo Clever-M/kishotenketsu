@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   root "novels#index"
-  resources :chapters
-  resources :novels
+  resources :novels do
+    resources :chapters
+  end
   resources :authors
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

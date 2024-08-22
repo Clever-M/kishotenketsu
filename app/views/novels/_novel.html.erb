@@ -1,8 +1,5 @@
 <div id="<%= dom_id novel %>">
-  <p>
-    <strong>Title:</strong>
-    <%= novel.title %>
-  </p>
+  <strong><%=link_to novel.title, novel %></strong>
 
   <p>
     <strong>Description:</strong>
@@ -16,7 +13,6 @@
 
   <p>
     <strong>Author:</strong>
-    <%= novel.author_id %>
+    <%= novel.author.nickname %>
   </p>
-
 </div>

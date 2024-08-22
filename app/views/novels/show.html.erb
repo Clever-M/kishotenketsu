@@ -1,6 +1,30 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @novel %>
+<div id="<%= dom_id @novel %>">
+  <h1><strong><%= @novel.title %></strong></h1>
+
+  <p>
+    <strong>Description:</strong>
+    <%= @novel.description %>
+  </p>
+
+  <p>
+    <strong>Genre:</strong>
+    <%= @novel.genre %>
+  </p>
+
+  <p>
+    <strong>Author:</strong>
+    <%= @novel.author.nickname %>
+  </p>
+
+  <h2>Chapters</h2>
+  <ul>
+    <% @chapters.each do |chapter| %>
+      <li><%= link_to "Chapter #{chapter.number}: #{chapter.title}", novel_chapter_path(@novel, chapter) %></li>
+    <% end %>
+  </ul>
+</div>
 
 <div>
   <%= link_to "Edit this novel", edit_novel_path(@novel) %> |
