@@ -1,13 +1,26 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  description: MyText
-  genre: MyString
+  title: Breaking up with Erika
+  description: A boy who wants to break up but doen't know how
+  genre: RomCom
   author: one
 
 two:
-  title: MyString
-  description: MyText
-  genre: MyString
+  title: Black Dahlia murder
+  description: A deep investigation about a strange murder case
+  genre: biography
+  author: one
+
+three:
+  title: Light and Blood
+  description: Story about the war between demons, vampires and witches
+  genre: horror, adventure
+  author: two
+
+four:
+  title: Gokk
+  description: A story about a group of university students that
+               wake up lost city
+  genre: horror
   author: two

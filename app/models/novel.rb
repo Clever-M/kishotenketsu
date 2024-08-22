@@ -3,4 +3,5 @@ class Novel < ApplicationRecord
 
   validates :title, presence: true
   validates :description, length: { maximum: 1000 }
+  has_many :chapters, dependent: :destroy
 end

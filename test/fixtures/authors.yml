@@ -1,11 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  nickname: MyString
-  bio: MyText
+  name: Joey Annoying
+  nickname: J Anoy
+  bio: A real annoying author
 
 two:
-  name: MyString
-  nickname: MyString
-  bio: MyText
+  name: Amy Harley
+  nickname: BooHarley
+  bio: Singer, dancer, song writer and now novelist

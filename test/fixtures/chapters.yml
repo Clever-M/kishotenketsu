@@ -1,0 +1,45 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: 1
+  title: Your crush is now single
+  body: Erika goes to Leo's house so they can have a night together to
+        watch movies, there he decides to talk about Andre, Erika's
+        ex-crush that's now single. At the end of it, she just gets
+        angry and decides to end the conversation.
+  novel: one
+two:
+  number: 2
+  title: What is you type again?
+  body: After no being able to convide Erika to Break up, Leo now starts
+        to question her is expecting her to say the same thing as before
+        (that she likes the pretty type). However, she ends up describing
+        someone very similar to him and that makes hm troubled
+  novel: one
+
+three:
+  number: 1
+  title: Who was Elizabeth Short
+  body: Elizabeth Short (July 29, 1924 – c. January 14–15, 1947),
+        known as the Black Dahlia, was an American woman found murdered
+        in the Leimert Park neighborhood of Los Angeles, California, on
+        January 15, 1947. Her case became highly publicized owing to the
+        gruesome nature of the crime, which included the mutilation of
+        her corpse, which was bisected at the waist. 
+  novel: two
+
+four:
+  number: 1
+  title: Rebirth
+  body: Leo meets Erika and she saves him from a vampire attack.
+        However, the attack leaves him almost dead and she ends up
+        to ressurrecting him by turning him into a blood user
+  novel: three
+
+four:
+  number: 2
+  title: Learning the blood art
+  body: Now Leo is starting to learn the blood art, but his family
+        is against it, because they are witches and wizards, which means
+        they are light users
+  novel: three
