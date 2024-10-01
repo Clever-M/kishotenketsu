@@ -12,7 +12,7 @@ class ChaptersController < ApplicationController
 
   # GET /chapters/new
   def new
-    @chapter = Chapter.new
+    @chapter = Novel.find(params[:novel_id]).chapters.build
   end
 
   # GET /chapters/1/edit
@@ -22,10 +22,12 @@ class ChaptersController < ApplicationController
   # POST /chapters or /chapters.json
   def create
     @chapter = Chapter.new(chapter_params)
+    @novel = @chapter.novel
+    @chapter.number = @novel.chapters.count + 1
 
     respond_to do |format|
       if @chapter.save
-        format.html { redirect_to chapter_url(@chapter), notice: "Chapter was successfully created." }
+        format.html { redirect_to novel_url(@novel), notice: "Chapter was successfully created." }
         format.json { render :show, status: :created, location: @chapter }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -65,6 +67,6 @@ class ChaptersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def chapter_params
-      params.require(:chapter).permit(:number, :title, :body, :novel_id)
+      params.require(:chapter).permit(:title, :body, :novel_id)
     end
 end

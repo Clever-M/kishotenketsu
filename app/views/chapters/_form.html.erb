@@ -1,4 +1,4 @@
-<%= form_with(model: chapter) do |form| %>
+<%= form_with(model: [chapter.novel, chapter]) do |form| %>
   <% if chapter.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(chapter.errors.count, "error") %> prohibited this chapter from being saved:</h2>
@@ -11,10 +11,7 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :number, style: "display: block" %>
-    <%= form.number_field :number %>
-  </div>
+  <%= form.hidden_field :novel_id %>
 
   <div>
     <%= form.label :title, style: "display: block" %>
@@ -24,11 +21,6 @@
   <div>
     <%= form.label :body, style: "display: block" %>
     <%= form.text_area :body %>
-  </div>
-
-  <div>
-    <%= form.label :novel_id, style: "display: block" %>
-    <%= form.text_field :novel_id %>
   </div>
 
   <div>

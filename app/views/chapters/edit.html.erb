@@ -7,6 +7,5 @@
 <br>
 
 <div>
-  <%= link_to "Show this chapter", @chapter %> |
-  <%= link_to "Back to chapters", chapters_path %>
+  <%= link_to "Back to chapters", novel_path(@chapter.novel) %>
 </div>
