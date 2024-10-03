@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_08_22_051405) do
+ActiveRecord::Schema[7.2].define(version: 2024_10_03_053759) do
   create_table "authors", force: :cascade do |t|
     t.string "name"
     t.string "nickname"
@@ -20,13 +20,12 @@ ActiveRecord::Schema[7.2].define(version: 2024_08_22_051405) do
   end
 
   create_table "chapters", force: :cascade do |t|
-    t.integer "number"
     t.string "title"
     t.text "body"
-    t.integer "novel_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["novel_id"], name: "index_chapters_on_novel_id"
+    t.integer "volume_id", null: false
+    t.index ["volume_id"], name: "index_chapters_on_volume_id"
   end
 
   create_table "novels", force: :cascade do |t|
@@ -39,6 +38,16 @@ ActiveRecord::Schema[7.2].define(version: 2024_08_22_051405) do
     t.index ["author_id"], name: "index_novels_on_author_id"
   end
 
-  add_foreign_key "chapters", "novels"
+  create_table "volumes", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.integer "novel_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["novel_id"], name: "index_volumes_on_novel_id"
+  end
+
+  add_foreign_key "chapters", "volumes"
   add_foreign_key "novels", "authors"
+  add_foreign_key "volumes", "novels"
 end

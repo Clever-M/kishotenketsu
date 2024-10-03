@@ -1,24 +1,24 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: Breaking up with Erika
+fakeship:
+  title: Fakeship
   description: A boy who wants to break up but doen't know how
   genre: RomCom
   author: one
 
-two:
+black_dahlia_murder:
   title: Black Dahlia murder
   description: A deep investigation about a strange murder case
   genre: biography
   author: one
 
-three:
+light_and_blood:
   title: Light and Blood
   description: Story about the war between demons, vampires and witches
   genre: horror, adventure
   author: two
 
-four:
+gokk:
   title: Gokk
   description: A story about a group of university students that
                wake up lost city

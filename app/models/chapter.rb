@@ -1,5 +1,5 @@
 class Chapter < ApplicationRecord
-  belongs_to :novel
+  belongs_to :volume
 
   validates :title, :body, presence: true
 end

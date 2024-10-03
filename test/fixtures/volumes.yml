@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+breaking_up_with_erika:
+  title: Breaking up with erika
+  description: Leo start a plan to make Erika breaks up with him
+  novel: fakeship
+
+a_mystery_is_born:
+  title: A mystery is born
+  description: Describing how the case ocurrered
+  novel: black_dahlia_murder
+
+a_close_enemy:
+  title: A close enemy
+  description: Leonard seems to have interest in Svetlana, but he actually is afraid of her
+  novel: light_and_blood
+
+gokk_one_shot:
+  title: One Shot
+  description: Leonard seems to have interest in Svetlana, but he actually is afraid of her
+  novel: gokk
