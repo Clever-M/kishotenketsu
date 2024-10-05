@@ -2,7 +2,7 @@ require "test_helper"
 
 class NovelsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @novel = novels(:one)
+    @novel = novels(:fakeship)
   end
 
   test "should get index" do

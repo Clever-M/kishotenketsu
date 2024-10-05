@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
+  get "volumes/new"
+  get "volumes/create"
+  get "volumes/update"
   root "novels#index"
+
   resources :novels do
+    resources :volumes
     resources :chapters
   end
   resources :authors

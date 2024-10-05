@@ -20,14 +20,14 @@
 
   <h2>Chapters</h2>
   <ul>
-    <% @chapters.each do |chapter| %>
-      <li><%= link_to "Chapter #{chapter.number}: #{chapter.title}", novel_chapter_path(@novel, chapter) %></li>
+    <% @volumes.each do |volume| %>
+      <li><%= link_to "Volume #{volume.number}: #{volume.title}", novel_volume_path(volume) %></li>
     <% end %>
   </ul>
 </div>
 
 <div>
-  <%= link_to "Add New Chapter", new_novel_chapter_path(@novel) %>
+  <%= link_to "Add New Volume", new_novel_volume_path(@novel) %>
   <%= link_to "Edit this novel", edit_novel_path(@novel) %> |
   <%= link_to "Back to novels", novels_path %>
 
