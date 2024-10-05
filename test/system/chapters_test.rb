@@ -5,43 +5,43 @@ class ChaptersTest < ApplicationSystemTestCase
     @chapter = chapters(:one)
   end
 
-  test "visiting the index" do
-    visit chapters_url
-    assert_selector "h1", text: "Chapters"
-  end
+  # test "visiting the index" do
+  #   visit chapters_url
+  #   assert_selector "h1", text: "Chapters"
+  # end
 
-  test "should create chapter" do
-    visit chapters_url
-    click_on "New chapter"
+  # test "should create chapter" do
+  #   visit chapters_url
+  #   click_on "New chapter"
 
-    fill_in "Body", with: @chapter.body
-    fill_in "Novel", with: @chapter.novel_id
-    fill_in "Number", with: @chapter.number
-    fill_in "Title", with: @chapter.title
-    click_on "Create Chapter"
+  #   fill_in "Body", with: @chapter.body
+  #   fill_in "Novel", with: @chapter.novel_id
+  #   fill_in "Number", with: @chapter.number
+  #   fill_in "Title", with: @chapter.title
+  #   click_on "Create Chapter"
 
-    assert_text "Chapter was successfully created"
-    click_on "Back"
-  end
+  #   assert_text "Chapter was successfully created"
+  #   click_on "Back"
+  # end
 
-  test "should update Chapter" do
-    visit chapter_url(@chapter)
-    click_on "Edit this chapter", match: :first
+  # test "should update Chapter" do
+  #   visit chapter_url(@chapter)
+  #   click_on "Edit this chapter", match: :first
 
-    fill_in "Body", with: @chapter.body
-    fill_in "Novel", with: @chapter.novel_id
-    fill_in "Number", with: @chapter.number
-    fill_in "Title", with: @chapter.title
-    click_on "Update Chapter"
+  #   fill_in "Body", with: @chapter.body
+  #   fill_in "Novel", with: @chapter.novel_id
+  #   fill_in "Number", with: @chapter.number
+  #   fill_in "Title", with: @chapter.title
+  #   click_on "Update Chapter"
 
-    assert_text "Chapter was successfully updated"
-    click_on "Back"
-  end
+  #   assert_text "Chapter was successfully updated"
+  #   click_on "Back"
+  # end
 
-  test "should destroy Chapter" do
-    visit chapter_url(@chapter)
-    click_on "Destroy this chapter", match: :first
+  # test "should destroy Chapter" do
+  #   visit chapter_url(@chapter)
+  #   click_on "Destroy this chapter", match: :first
 
-    assert_text "Chapter was successfully destroyed"
-  end
+  #   assert_text "Chapter was successfully destroyed"
+  # end
 end

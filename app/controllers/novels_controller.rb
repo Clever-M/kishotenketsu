@@ -8,7 +8,7 @@ class NovelsController < ApplicationController
 
   # GET /novels/1 or /novels/1.json
   def show
-    @chapters = @novel.chapters.order number: :asc
+    @volumes = @novel.volumes.order number: :asc
   end
 
   # GET /novels/new

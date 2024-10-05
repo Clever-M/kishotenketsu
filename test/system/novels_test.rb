@@ -2,7 +2,7 @@ require "application_system_test_case"
 
 class NovelsTest < ApplicationSystemTestCase
   setup do
-    @novel = novels(:one)
+    @novel = novels(:fakeship)
   end
 
   test "visiting the index" do
